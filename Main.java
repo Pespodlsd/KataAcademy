@@ -14,7 +14,7 @@ public class Main {
         int result = 0;
         if (input.contains("+")) {
             massOfValues = input.split("\\+");
-            if (isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
+            if (massOfValues.length == 2 && isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
                 if (isTrue(Integer.parseInt(massOfValues[0]),Integer.parseInt(massOfValues[1]))) {
                     result = Integer.parseInt(massOfValues[0]) + Integer.parseInt(massOfValues[1]);
                 } else {
@@ -34,7 +34,7 @@ public class Main {
             }
         } else if (input.contains("-")) {
             massOfValues = input.split("-");
-            if (isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
+            if (massOfValues.length == 2 && isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
                 if (isTrue(Integer.parseInt(massOfValues[0]),Integer.parseInt(massOfValues[1]))) {
                     result = Integer.parseInt(massOfValues[0]) - Integer.parseInt(massOfValues[1]);
                 } else {
@@ -54,7 +54,7 @@ public class Main {
             }
         } else if (input.contains("*")) {
             massOfValues = input.split("\\*");
-            if (isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
+            if (massOfValues.length == 2 && isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
                 if (isTrue(Integer.parseInt(massOfValues[0]),Integer.parseInt(massOfValues[1]))) {
                     result = Integer.parseInt(massOfValues[0]) * Integer.parseInt(massOfValues[1]);
                 } else {
@@ -74,7 +74,7 @@ public class Main {
             }
         } else if (input.contains("/")) {
             massOfValues = input.split("/");
-            if (isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
+            if (massOfValues.length == 2 && isNumeric(massOfValues[0]) && isNumeric(massOfValues[1])) {
                 if (isTrue(Integer.parseInt(massOfValues[0]),Integer.parseInt(massOfValues[1]))) {
                     result = Integer.parseInt(massOfValues[0]) / Integer.parseInt(massOfValues[1]);
                 } else {
